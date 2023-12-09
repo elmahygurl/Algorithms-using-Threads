@@ -50,15 +50,17 @@ For array test cases, the format is:
 
 Array elements that are space-separated.
 
-## How to Run
+## Compiling and running
 ```bash
-#To compile and run the matrix multiplication program, open a terminal and execute the following commands:
-
+#To compile the matrix multiplication program, open a terminal and execute the following commands:
 
 gcc -matrixMultiplication.c -o matrixMultiplication
+#To run:
 ./matrixMultiplication <testcaseFile>
 
 #To compile merge sort program, open a terminal and execute the following commands:
 
 gcc -MergeSort.c -o MergeSort
+
+#To run:
 ./MergeSort <testcaseFile>

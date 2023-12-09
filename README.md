@@ -53,14 +53,12 @@ Array elements that are space-separated.
 ## Compiling and running
 ```bash
 #To compile the matrix multiplication program, open a terminal and execute the following commands:
-
 gcc -matrixMultiplication.c -o matrixMultiplication
 #To run:
 ./matrixMultiplication <testcaseFile>
 
+
 #To compile merge sort program, open a terminal and execute the following commands:
-
 gcc -MergeSort.c -o MergeSort
-
 #To run:
 ./MergeSort <testcaseFile>

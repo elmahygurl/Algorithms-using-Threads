@@ -59,6 +59,9 @@ gcc -matrixMultiplication.c -o matrixMultiplication
 ./matrixMultiplication <testcaseFile>
 
 
+
+
+
 To compile merge sort program, open a terminal and execute the following commands:
 
 ```bash

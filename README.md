@@ -27,14 +27,8 @@ Example test cases:
 - input6-matrix.txt
 - matrices.txt
 
-### Merge Sort
-
-Example test cases: 
-- sorttt.txt
-- input-sort.txt
-- input-sort2.txt
-
 For matrix test cases, the format is as follows:
+
 [number of rows of 1st matrix] [number of columns of 1st matrix]
 
 1st matrix entries
@@ -43,7 +37,18 @@ For matrix test cases, the format is as follows:
 
 2nd matrix entries
 
+### Merge Sort
+
+Example test cases: 
+- sorttt.txt
+- input-sort.txt
+- input-sort2.txt
+
 For array test cases, the format is:
+
 [number of elements]
+
 Array elements that are space-separated.
+
+
 

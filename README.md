@@ -36,8 +36,11 @@ Example test cases:
 
 For matrix test cases, the format is as follows:
 [number of rows of 1st matrix] [number of columns of 1st matrix]
+
 1st matrix entries
+
 [number of rows of 2nd matrix] [number of columns of 2nd matrix]
+
 2nd matrix entries
 
 For array test cases, the format is:

@@ -1,6 +1,6 @@
 # Algorithms-using-Threads
 ## Project Overview
-Implementing Merge Sort and Matrix Multiplication using POSIX Thread.
+Implementing *Merge Sort* and <u>Matrix Multiplication</u> using POSIX Thread.
 
 
 Two Matrix Multiplication Approaches:

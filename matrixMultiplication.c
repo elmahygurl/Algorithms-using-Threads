@@ -208,7 +208,18 @@ int main(int argc, char *argv[])
                 printf("Uh-oh!\n");
                 return -1;
             }
-            if (pthread_join(threads[threadIndex], NULL) != 0)
+           
+            threadIndex++;   //da hywsal to size of output matrix at the end 3x2=6 - row1xcol2
+        }
+    }
+
+    clock_t end_time1 = clock();
+
+ for (int i = 0; i < rows1; i++)
+    {
+        for (int j = 0; j < col2; j++)
+        {
+ if (pthread_join(threads[threadIndex], NULL) != 0)
             {
                 printf("Error joining thread.\n");
                 //freeEverything(matrix1, matrix2, output1, rows1, rows2);
@@ -216,14 +227,10 @@ int main(int argc, char *argv[])
                 free(threadArgs);
                 return -1;
             }
-            threadIndex++;   //da hywsal to size of output matrix at the end 3x2=6 - row1xcol2
         }
     }
 
-    clock_t end_time1 = clock();
-
-
-
+    
     ///printf("elapsed time = %.6f\n", now() - start);
 //printing output matrix 1
     for (int i = 0; i < rows1; i++)
@@ -278,7 +285,13 @@ clock_t start_time2 = clock();   //start clock
             printf("Thread %d created.\n", i);
         }*/
 
-        if (pthread_join(threads2[i], NULL) != 0)  //waiting for threads to finish
+       
+
+    }
+
+ for (int i=0; i<rows1; i++)
+    {
+         if (pthread_join(threads2[i], NULL) != 0)  //waiting for threads to finish
         {
             printf("Error joining thread.\n");
             //freeEverything(matrix1, matrix2, output1, rows1, rows2);
@@ -286,9 +299,9 @@ clock_t start_time2 = clock();   //start clock
             //free(threadArgs2);
             return -1;
         }
-
     }
-
+    
+    
 clock_t end_time2 = clock();   //start clock
     //printing output matrix 2
     for (int i = 0; i < rows1; i++)
